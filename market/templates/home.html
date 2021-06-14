@@ -42,6 +42,16 @@
     text-align: center;
     text-indent: 80px;
     width: 1400px;
+    margin-left: 10px;
+}
+
+.textans
+{
+     color: #f4ebe8;
+    font-size: 25px;
+    text-align: center;
+    width: 1400px;
+    margin-left : 50px;
 }
 
 
@@ -54,20 +64,29 @@
 }
 
 .para{
-    color: black;
+    color: #F8EA8C;
     position:absolute;
-    top:60%;
+    margin-top: -350px;
     text-align: center;
-    width: 100%;
-    font-size: 20px;
+    width: 800px;
+    margin-left: 350px;
+    font-size: 25px;
+    text-shadow: 2px 2px 3px black;
 }
 
 .alignment{
     text-align: center;
-    font-size: 24px;
-    color: white;
+    font-size: 33px;
+    color: #24a0ed;
 }
 
+.align{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    width: 1000px;
+    margin-left: 300px;
+}
 
 .circular_images{
     margin-left: 680px;
@@ -134,37 +153,46 @@ ul{
 
     <div class="content">
 
-        <br><br><br><br><br><br>
+        <br><br><br><br>
         <section>
-            <div class="text">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            <div>
+                <p class="text">
+                    Are you new to the campus?
+                </p>
+                <p class="textans">
+                     We'll help you find your ideal space to stay, furnishing you with every necessary feature of hostels & PGs around CUSAT. From basic details like rent to the list of facilities available in your room, we've managed to cover everything you need to know about a "space", to make it your second home at CUSAT.
                 </p>
             </div>
             <br><br>
             <div class="picture">
               <img src="{{ url_for('static', filename='images/hostel1.jpg') }}" width="950" height="550" align="middle" alt="hostel_image" style="border-radius: 15px">
-              <p class="para">my name is ashana...</p>
+              <p class="para"><b>As your hostel is one of the major parts of your campus life, we don't want you to miss out on comfort as well as fun!</b></p>
             </div>
             <br><br><br><br><br>
             <div>
                 <div class="circular_images">
-                    <img src="{{ url_for('static', filename='images/circle1.jpg')}}" width="400" height="300" alt="hostel_image">
+                    <img src="{{ url_for('static', filename='images/circle1.jpg')}}" width="300" height="200" alt="hostel_image">
                 </div>
-                <div class="alignment">
-                <p>my name is minato namikaze...................................................................................................</p>
+                <div>
+                    <p class="alignment"><b>All-inclusive</b></p>
+                    <p class="align">Since we don't want you to miss any option, we let hostel owners to log in and add their hostel info into our database hassle-free. Added hostel information is updated and reflected in the search page without any holdup.
+                    </p>
                 </div>
                 <div class="circular_images">
                     <img src="{{ url_for('static', filename='images/hostel-6.jpg')}}" width="400" height="300" alt="hostel_image">
                 </div>
-                <div class="alignment">
-                <p>my name is minato namikaze...................................................................................................</p>
+                 <div>
+                    <p class="alignment"><b>Comprehensive</b></p>
+                    <p class="align">We've strived to fill in every needed detail about hostels since it's vital to know that about the place you're gonna stay. Hidden charges like caution, extra fees for facilities, all exposed for you!
+                    </p>
                 </div>
                 <div class="circular_images">
                     <img src="{{ url_for('static', filename='images/background.jpg')}}" width="400" height="300" alt="hostel_image">
                 </div>
-                <div class="alignment">
-                <p>my name is minato namikaze...................................................................................................</p>
+               <div>
+                    <p class="alignment"><b>From experience</b></p>
+                    <p class="align">As students of CUSAT, we've chosen and collected every input for you that we wished we would've known when we were in your place. We don't want you to get caught in a place you don't like and end up missing solace and recreation.
+                    </p>
                 </div>
             </div>
         </section>
@@ -175,7 +203,7 @@ ul{
                 <li>Aparna Unnikrishnan : 19it024apar@ug.cusat.ac.in</li>
                 <li>Ashana : 19it026asha@ug.cusat.ac.in</li>
               </ul>
-            <center><p>Copyright @HostelSeekingForum</p></center>
+            <center><p>Copyright @Spaces</p></center>
         </footer>
     </div>
       <!-- Future Content here -->
