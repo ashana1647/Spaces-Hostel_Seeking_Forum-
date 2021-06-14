@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% block title %}
+    register hostel Page
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="form-signin" style="color:white">
+            {{ form.hidden_tag() }}
+            <br><br><br>
+            <h1 class="h3 mb-3 font-weight-normal" id="name">
+                Enter Hostel Details
+            </h1>
+            <hr>
+            <br>
+        <div class="pic">
+            <!--<img src="{{ url_for('static', filename='images/hostel-6.jpg')}}" width="600" height="400" alt="hostel_image">-->
+            <table align="center">
+                <tr>
+                    <td class="label">{{ form.hs_name.label() }}</td>
+                    <td> :&nbsp;&nbsp;&nbsp; </td>
+                    <td class="data">{{ form.hs_name(class="form-control", placeholder="Hostel Name") }}</td>
+                </tr>
+                <tr>
+                    <td class="label">{{ form.hs_address.label() }}</td>
+                    <td> :&nbsp;&nbsp;&nbsp; </td>
+                    <td class="data">{{ form.hs_address(class="form-control", placeholder="Address") }}</td>
+                </tr>
+                <tr>
+                    <td class="label">{{ form.hs_contact.label() }}</td>
+                    <td> : &nbsp;&nbsp;&nbsp; </td>
+                    <td class="data">{{ form.hs_contact(class="form-control", placeholder="Contact Number") }}</td>
+                </tr>
+                <tr>
+                    <td class="label">{{ form.hs_rent.label() }}</td>
+                    <td> : &nbsp;&nbsp;&nbsp; </td>
+                    <td class="data">{{ form.hs_rent(class="form-control", placeholder="Rent") }}</td>
+                <tr>
+                    <td class="label">{{ form.hs_description.label() }}</td>
+                    <td> : &nbsp;&nbsp;&nbsp; </td>
+                    <td class="data">{{ form.hs_description(class="form-control", placeholder="Description") }}</td>
+                </tr>
+                <tr>
+                    <td class="label">{{ form.rooms.label() }}</td>
+                    <td> : &nbsp;&nbsp;&nbsp; </td>
+                    <td class="data">{{ form.rooms(class="form-control", placeholder="Rooms") }}</td>
+                </tr>
+                <tr>
+                    <td class="label">{{ form.caution.label() }}</td>
+                    <td> : &nbsp;&nbsp;&nbsp; </td>
+                    <td class="data">{{ form.caution(class="form-control", placeholder="Caution Deposit") }}</td>
+                </tr>
+                <tr>
+                    <td class="label">{{ form.curfew.label() }}</td>
+                    <td> : &nbsp;&nbsp;&nbsp; </td>
+                    <td class="data">{{ form.curfew(class="form-control", placeholder="Curfew") }}</td>
+                </tr>
+                <tr>
+                    <td class="label">{{ form.maps_link.label() }}</td>
+                    <td> : &nbsp;&nbsp;&nbsp; </td>
+                    <td class="data">{{ form.maps_link(class="form-control", placeholder="Maps Link") }}</td>
+                <tr>
+                    <td class="label">{{ form.type.label() }}</td>
+                    <td> : &nbsp;&nbsp;&nbsp; </td>
+                    <td class="data">{{ form.type(class="form-control", placeholder="Girls or Boys") }}</td>
+                </tr>
+            </table>
+        </div>
+            <br><br><br>
+            <div class="submit">
+                {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+            </div>
+            <br><br><br><br>
+        </form>
+    </div>
+</body>
+<style>
+    .pic img{
+    border-radius: 20px;
+    }
+
+    #name{
+    font-size: 45px;
+    color: #007bff;
+    }
+
+    .label{
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    }
+
+    .data{
+    width: 500px;
+    }
+    .submit{
+    width: 250px;
+    margin-left: 400px;
+    }
+</style>
+{% endblock %}
